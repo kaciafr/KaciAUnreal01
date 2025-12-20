@@ -51,3 +51,42 @@
 - [] Balance stamina/combat
 - [] Difficulté ennemis
 - [] Temps de jeu 5-10min
+
+## Structure projet :
+
+```
+Content/
+	Core/
+		GameMode/
+		PlayerController/
+		GameInstance/
+
+	Systems/
+		Stamina/
+		Health/
+		GravityGun/
+		Heal/
+
+	UI/
+		HUD/
+		Widgets/
+
+	Enemies/
+		AI/
+		Spawners/
+		Boss/
+
+	Levels/
+		Main/
+		Test/
+		Blockout/
+
+	Interactables/
+		Puzzles/
+		Traps/
+		Pickups/
+
+	Materials/
+		Zones/           (couleurs zones spéciales)
+		Prototyping/
+```
