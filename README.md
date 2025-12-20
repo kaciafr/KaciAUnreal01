@@ -56,30 +56,21 @@
 
 ```
 Content/
-	Core/
-		GameMode/
-		PlayerController/
-		GameInstance/
+	Blueprints/
+		BP_GameMode
+		BP_PlayerController
+		BP_Character
+		CharacterComponents/
+			BP_StaminaComponent
+			BP_HealthComponent
+			BP_GravityGunComponent
 
-	Systems/
-		Stamina/
-		Health/
-		GravityGun/
-		Heal/
+	Levels/
+		Lvl_Main.umap
 
 	UI/
 		HUD/
 		Widgets/
-
-	Enemies/
-		AI/
-		Spawners/
-		Boss/
-
-	Levels/
-		Main/
-		Test/
-		Blockout/
 
 	Interactables/
 		Puzzles/

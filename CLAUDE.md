@@ -15,33 +15,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Content Structure
 
-The project follows a modular architecture with clear separation of concerns:
+The project follows a simplified, component-based architecture:
 
-**Content/Core/** - Core game framework
-- GameMode/
-- PlayerController/
-- GameInstance/
+**Content/Blueprints/** - Core blueprints
+- BP_GameMode - Main game mode
+- BP_PlayerController - Player controller
+- BP_Character - Player character blueprint
+- CharacterComponents/
+  - BP_StaminaComponent - Stamina system (consumption + regeneration)
+  - BP_HealthComponent - HP and damage system
+  - BP_GravityGunComponent - Physics-based grab/throw mechanics
 
-**Content/Systems/** - Gameplay systems (component-based)
-- Stamina/ - Stamina consumption and regeneration system
-- Health/ - HP and damage system
-- GravityGun/ - Physics-based grab/throw mechanics
-- Heal/ - Pickup-based healing system
-
-**Content/ThirdPerson/** - Base third-person template
-- BP_ThirdPersonCharacter - Player character blueprint
-- BP_ThirdPersonGameMode - Base game mode
-- BP_ThirdPersonPlayerController - Player controller
-
-**Content/Variant_Combat/** - Combat-specific variant assets
-- Blueprints/AI/ - Enemy AI blueprints
-  - EQS/ - Environment Query System assets
-  - StateTreeTasks/ - State Tree task implementations
-- Blueprints/Interactables/ - Interactive objects
-- Input/Actions/ - Enhanced Input actions
-- Anims/ - Combat animations
-- VFX/ - Visual effects
-- UI/ - Combat UI elements
+**Content/Levels/** - Game levels
+- Lvl_Main.umap - Main gameplay level
 
 **Content/UI/** - User interface
 - HUD/ - Main HUD components
@@ -56,8 +42,11 @@ The project follows a modular architecture with clear separation of concerns:
 - Zones/ - Color-coded zone materials (platforming zones, danger zones)
 - Prototyping/ - Blockout materials
 
-**Content/Characters/Mannequins/** - Character assets
+**Content/Characters/Mannequins/** - Character assets (from template)
 - Anims/ - Animation assets for unarmed, pistol, and rifle variants
+
+**Content/ThirdPerson/** - Original third-person template (reference only)
+**Content/Variant_Combat/** - Combat variant template (reference only)
 
 ## Key Gameplay Systems
 
@@ -67,11 +56,11 @@ The project follows a modular architecture with clear separation of concerns:
 - Auto-regeneration when not in use
 - Integrated with UI stamina bar
 
-### AI System
-- Uses GameplayStateTree for behavior logic
-- EQS (Environment Query System) for spatial reasoning
-- Spawner-based enemy placement
-- Boss AI with special arena behavior
+### Component-Based Architecture
+- BP_Character uses Actor Components for all major systems
+- Each component is independent and reusable
+- Components: Stamina, Health, GravityGun
+- Simplified structure for rapid prototyping
 
 ### Zone-Based Level Design
 - Color-coded materials distinguish zone types:
@@ -90,9 +79,8 @@ The project follows a modular architecture with clear separation of concerns:
 This is a Blueprint-only project. There is no C++ code, so no compilation is required.
 
 ### Level Development
-- Main level: `Content/Levels/Main/`
-- Test levels: `Content/Levels/Test/`
-- Blockout: `Content/Levels/Blockout/`
+- Main level: `Content/Levels/Lvl_Main.umap`
+- Create new levels directly in `Content/Levels/`
 
 ### Project Structure Script
 `create-structure.ps1` - PowerShell script to regenerate the Content folder structure if needed
