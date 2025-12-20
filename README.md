@@ -6,15 +6,16 @@
 
 - ✅ Setup projet
 - ✅ Template 3ème personne
-- 🔄 Système Stamina (consommation + régénération)
+- ✅ Système Stamina (consommation + régénération)
+- ✅ Sprint (SHIFT + consommation stamina)
 - [] Système Vie/Dégâts
 - [] Système Heal (pickups)
 - [] Saut + mécaniques platforming
-- 🔄 Sprint (SHIFT + consommation stamina)
 - [] Gravity Gun (grab/release/throw)
+- [] FireBall
 
 ### Combat & Ennemis
-’’
+
 - [] Attaques consomment stamina
 - [] Système spawn ennemis (spawners + triggers)
 - [] IA ennemis de base
@@ -54,30 +55,28 @@
 
 ## Structure projet :
 
-```
-Content/
-	Blueprints/
-		BP_GameMode
-		BP_PlayerController
-		BP_Character
-		CharacterComponents/
-			BP_StaminaComponent
-			BP_HealthComponent
-			BP_GravityGunComponent
+	Content/
+		Blueprints/
+			BP_GameMode
+			BP_PlayerController
+			BP_Character
+			CharacterComponents/
+				BP_StaminaComponent
+				BP_HealthComponent
+				BP_GravityGunComponent
 
-	Levels/
-		Lvl_Main.umap
+		Levels/
+			Lvl_Main.umap
 
-	UI/
-		HUD/
-		Widgets/
+		UI/
+			HUD/
+			Widgets/
 
-	Interactables/
-		Puzzles/
-		Traps/
-		Pickups/
+		Interactables/
+			Puzzles/
+			Traps/
+			Pickups/
 
-	Materials/
-		Zones/           (couleurs zones spéciales)
-		Prototyping/
-```
+		Materials/
+			Zones/           (couleurs zones spéciales)
+			Prototyping/
