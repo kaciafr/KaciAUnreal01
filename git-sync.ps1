@@ -1,13 +1,21 @@
 Add-Type -AssemblyName Microsoft.VisualBasic
-$message = [Microsoft.VisualBasic.Interaction]::InputBox('Entrez le message du commit', 'Git Commit', 'auto')
+Add-Type -AssemblyName System.Windows.Forms
 
-if ($message) {
-    git add .
-    git commit -m $message
-    git pull
-    git push origin main
+$status = git status --porcelain
+
+if ($status) {
+    $message = [Microsoft.VisualBasic.Interaction]::InputBox('Entrez le message du commit', 'Git Commit', 'auto')
     
-    [System.Windows.Forms.MessageBox]::Show("Commit effectué avec succès!", "Git")
+    if ($message) {
+        git add .
+        git commit -m $message
+        git pull
+        git push origin main
+        [System.Windows.Forms.MessageBox]::Show("Commit et sync OK !`n`nMessage: $message", "Git - Succes")
+    } else {
+        [System.Windows.Forms.MessageBox]::Show("Commit annule", "Git")
+    }
 } else {
-    [System.Windows.Forms.MessageBox]::Show("Commit annulé", "Git")
+    git pull
+    [System.Windows.Forms.MessageBox]::Show("Aucune modification locale`nPull effectue", "Git - Sync")
 }
