@@ -17,5 +17,6 @@ if ($status) {
     }
 } else {
     git pull
+    git push origin main
     [System.Windows.Forms.MessageBox]::Show("Aucune modification locale`nPull effectue", "Git - Sync")
 }
