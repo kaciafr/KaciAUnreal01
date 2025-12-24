@@ -8,22 +8,23 @@
 - ✅ Template 3ème personne
 - ✅ Système Stamina (consommation + régénération)
 - ✅ Sprint (SHIFT + consommation stamina)
-- [] Système Vie/Dégâts
+- ✅ Système Vie/Dégâts
 - [] Système Heal (pickups)
 - ✅ Saut + mécaniques platforming
-- [] Gravity Gun (grab/release/throw)
-- [] FireBall
+- [en cours] Gravity Gun (grab/release/throw)
+- [à ameliorer mais terminer ] FireBall
+- [] Pouvoir de glace 
 
 ### Combat & Ennemis
 
 - [] Attaques consomment stamina
-- [] Système spawn ennemis (spawners + triggers)
-- [] IA ennemis de base
+- ✅ Système spawn ennemis (spawners + triggers)
+- ✅ IA ennemis de base
 - [] Boss arena (comportement boss)
 
 ### Level Design
 
-- [] Blockout level principal (5-10min)
+- [en cours ] Blockout level principal (5-10min)
 - [] Zones platforming (couleur dédiée)
 - [] Zones pièges/dangers (couleur dédiée)
 - [] Puzzle interaction "Use"
