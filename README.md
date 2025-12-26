@@ -9,7 +9,7 @@
 - ✅ Système Stamina (consommation + régénération)
 - ✅ Sprint (SHIFT + consommation stamina)
 - ✅ Système Vie/Dégâts
-- [] Système Heal (pickups)
+- ✅ Système Heal (pickups)
 - ✅ Saut + mécaniques platforming
 - [en cours] Gravity Gun (grab/release/throw)
 - [à ameliorer mais terminer ] FireBall
