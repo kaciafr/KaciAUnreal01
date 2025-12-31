@@ -28,21 +28,21 @@
 - [] Zones pièges/dangers (couleur dédiée)
 - ✅ Puzzle interaction "Use"
 - [] Placement pièges dégâts
-- [] Placement points heal
-- [] Placement spawn points ennemis
+- ✅ Placement points heal
+- ✅ Placement spawn points ennemis
 - ✅ Zone finale/boss arena
 
 ### UI & Polish
 
 - ✅ Barre Stamina
-- [] Barre Vie (ajustement si besoin)
+- ✅ Barre Vie (ajustement si besoin)
 - [] Feedback visuel dégâts
 - [] Feedback visuel heal
 
 ### Scène Finale
 
 - ✅ Combat multiple ennemis
-- [] Interactions originales (environnement)
+- ✅ Interactions originales (environnement)
 - [] Boss fight
 
 
