@@ -11,41 +11,40 @@
 - ✅ Système Vie/Dégâts
 - ✅ Système Heal (pickups)
 - ✅ Saut + mécaniques platforming
-- [en cours] Gravity Gun (grab/release/throw)
-- [à ameliorer mais terminer ] FireBall
-- [] Pouvoir de glace 
+- ✅ Gravity Gun (grab/release/throw)
+- ✅ FireBall
 
 ### Combat & Ennemis
 
-- [] Attaques consomment stamina
+- en cours  Attaques consomment stamina reste pouvoir telekinesie 
 - ✅ Système spawn ennemis (spawners + triggers)
 - ✅ IA ennemis de base
 - [] Boss arena (comportement boss)
 
 ### Level Design
 
-- [en cours ] Blockout level principal (5-10min)
-- [] Zones platforming (couleur dédiée)
+- ✅ Blockout level principal (5-10min)
+- ✅ Zones platforming (couleur dédiée)
 - [] Zones pièges/dangers (couleur dédiée)
-- [] Puzzle interaction "Use"
+- ✅ Puzzle interaction "Use"
 - [] Placement pièges dégâts
 - [] Placement points heal
 - [] Placement spawn points ennemis
-- [] Zone finale/boss arena
+- ✅ Zone finale/boss arena
 
 ### UI & Polish
 
-- [] Barre Stamina
+- ✅ Barre Stamina
 - [] Barre Vie (ajustement si besoin)
 - [] Feedback visuel dégâts
 - [] Feedback visuel heal
 
 ### Scène Finale
 
-- [] Combat multiple ennemis
+- ✅ Combat multiple ennemis
 - [] Interactions originales (environnement)
 - [] Boss fight
-- [] Cinématique/fin
+
 
 ### Tests & Balance
 
